@@ -1,0 +1,11 @@
+--
+-- дамп базы
+--
+CREATE TABLE `honeyhunters`.`users` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `name` VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , `mail` VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , `comment` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , PRIMARY KEY (`name`), UNIQUE (`id`)) ENGINE = InnoDB;
+
+--
+-- значения
+--
+INSERT INTO `users` (`id`, `name`, `mail`, `comment`) VALUES ('0', 'vasya', 'vasya@mail.com', 'Сообщение от Василия Пупкина.');
+
+INSERT INTO `users` (`id`, `name`, `mail`, `comment`) VALUES (NULL, 'Маруся', 'marysa@mail.com', 'Все привет, я Маруся.');
